@@ -1,13 +1,35 @@
 
-main {
-  width: 100%;
-  min-height: 100vh;
+main { 
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  background-color: #F5F3F3; 
+  box-sizing: border-box;
+  font-weight: 100; 
+}
 
-  h1 {
-    font-size: 6rem;
+
+.title_input {
+  margin-right: 10px;
+}
+
+.input_wrapper {
+  text-align: center;
+  margin-top: 24px
+}
+
+
+.mat-mdc-form-field {
+  min-width: 278px;
+  
+}
+
+@media (max-width: 600px) {
+  main {
+    justify-content: space-around;
+    padding: 20% 0%;
   }
 }

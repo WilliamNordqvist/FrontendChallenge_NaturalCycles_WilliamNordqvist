@@ -1,6 +1,23 @@
-
 <main class="main">
-  <h1>Hello! 👋</h1>
+  <app-title [text]="titleText" [date]="date"></app-title>
+  <div class="input_wrapper">
+    <mat-form-field class="title">
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="titleText" (input)="onTitleChange($event)" placeholder="Title" />
+    </mat-form-field>
+    <mat-form-field class="date">
+      <mat-label>Date</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        [(ngModel)]="date"
+        (dateChange)="onDateChange($event)"
+        placeholder="date"
+      />
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
 </main>
 
-<router-outlet />
+<router-outlet></router-outlet>
