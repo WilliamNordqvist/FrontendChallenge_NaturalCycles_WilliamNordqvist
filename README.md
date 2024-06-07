@@ -31,3 +31,8 @@ cd FrontendChallenge_NaturalCycles_WilliamNordqvist
 npm install
 ng serve
 
+
+
+You can test the deployed application at the following URL:
+
+[https://frontend-challenge-natural-cycles-william-nordqvist.vercel.app/](https://frontend-challenge-natural-cycles-william-nordqvist.vercel.app/)
